@@ -1,0 +1,198 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+$text: #333;
+$orange: #ef7f1a;
+$trans: all 0.2s ease-in-out;
+
+// @include font-face('fontName', '../fonts/fontPath/fontName', normal);
+
+::selection {
+    // background: cyan;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $text;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+input[type='checkbox'] {
+    display: none;
+
+    & + label {
+        position: relative;
+        padding-left: 26px;
+        user-select: none;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background: #ffffff;
+            border: 1px solid #008dd2;
+        }
+    }
+
+    &:checked + label::before {
+        background: url('../img/check.svg') no-repeat center $orange;
+        background-size: 12px;
+    }
+}
+
+.btn,
+input,
+textarea,
+select,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    transition: $trans;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.center {
+        @include centerX;
+    }
+}
+
+.container {
+    @include r(1410) {
+        padding: 0 15px;
+    }
+
+    margin: 0 auto;
+    max-width: 1380px;
+}
+
+.header {
+    padding: 20px 0 29px;
+
+    .container {
+        @include fcs;
+    }
+
+    &__logo {
+        margin-right: 57px;
+    }
+
+    &__menu {
+        @include fcn;
+        margin-top: 16px;
+
+        a {
+            font-size: 16px;
+            color: #4f4f4f;
+            margin: 0 31px;
+            transition: $trans;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    &__phone {
+        margin-left: auto;
+        @include fcn;
+        font-size: 16px;
+        transition: $trans;
+        margin-top: 16px;
+
+        &:hover {
+            color: $orange;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__order {
+        color: $orange;
+        text-decoration: underline;
+        font-size: 16px;
+        margin-left: 18px;
+        margin-top: 16px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    background: url('../img/main.jpg') no-repeat right center;
+    background-size: cover;
+    height: 577px;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.25;
+        color: #fabf8a;
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        color: #fff;
+
+        span {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__item {
+        @include fcn;
+    }
+}
