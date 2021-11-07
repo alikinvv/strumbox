@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
+            <div class="header__menu">
+                <a href="javascript:void(0)">О компании</a>
+                <a href="javascript:void(0)">Преимущества</a>
+                <a href="javascript:void(0)">Расчет сметы</a>
+            </div>
+            <a href="tel:0976208484" class="header__phone"><img src="img/phone.svg" alt=""> 097 620 84 84</a>
+            <a href="javascript:void(0)" class="header__order">Заказать звонок</a>
+        </div>
+    </header>
+<!-- START CONTENT  -->
+
+<section class="breadcrumbs">
+    <div class="container">
+        Товар из категории
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="container">
+        <div class="catalog__sidebar">
+            <div class="catalog__title">Все для монтажа кабеля</div>
+            <div class="catalog__item">
+                <div class="catalog__item-title">Количество <br>
+                    токопроводящих жил</div>
+                <div class="catalog__form">
+                    <div class="form-group">
+                        <input type="checkbox" id="c1">
+                        <label for="c1">2</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" checked id="c2">
+                        <label for="c2">3</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="c3">
+                        <label for="c3">4</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="c4">
+                        <label for="c4">5</label>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-title">Материал токопроводящей <br>
+                    жилы</div>
+                <div class="catalog__form">
+                    <div class="form-group">
+                        <input type="checkbox" id="c5">
+                        <label for="c5">2</label>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-title">Сечение токопроводящих <br>
+                    жил, мм2</div>
+                <div class="catalog__form">
+                    <div class="form-group">
+                        <input type="checkbox" id="c6">
+                        <label for="c6">1.5</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" checked id="c7">
+                        <label for="c7">2.5</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="c8">
+                        <label for="c8">4</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="c9">
+                        <label for="c9">6</label>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__item-title">Марка</div>
+                <div class="catalog__form">
+                    <div class="form-group">
+                        <input type="checkbox" id="c10">
+                        <label for="c10">ВВГ-П нг</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" checked id="c11">
+                        <label for="c11">ВВГ-П нгд</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="c12">
+                        <label for="c12">ВВГнг</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__main">
+            <div class="catalog__sort">
+                <a href="javascript:void(0)">Вернуться к расчету</a>
+                <div>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="" selected disabled hidden>Сортировка</option>
+                            <option value="">Сортировка 1</option>
+                            <option value="">Сортировка 2</option>
+                            <option value="">Сортировка 3</option>
+                        </select>
+                    </div>
+                    <div class="catalog__icon active">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.37788 0.131836H0.757973C0.339876 0.131836 0 0.470424 0 0.889039V6.51593C0 6.9348 0.339876 7.2739 0.757973 7.2739H6.37788C6.79829 7.2739 7.13688 6.9348 7.13688 6.51593V0.889039C7.13637 0.469908 6.79829 0.131836 6.37788 0.131836Z"
+                                fill="#546785" />
+                            <path
+                                d="M6.37788 7.86288H0.757973C0.339876 7.86288 0 8.20147 0 8.62017V14.2484C0 14.667 0.339876 15.0061 0.757973 15.0061H6.37788C6.79829 15.0061 7.13688 14.667 7.13688 14.2484V8.62017C7.13637 8.20147 6.79829 7.86288 6.37788 7.86288Z"
+                                fill="#546785" />
+                            <path
+                                d="M6.37788 15.8556H0.757973C0.339876 15.8556 0 16.1942 0 16.6129V22.2416C0 22.6601 0.339876 22.9992 0.757973 22.9992H6.37788C6.79829 22.9992 7.13688 22.6601 7.13688 22.2416V16.6129C7.13637 16.1942 6.79829 15.8556 6.37788 15.8556Z"
+                                fill="#546785" />
+                            <path
+                                d="M14.3108 0.000762939H8.68961C8.27152 0.000762939 7.93164 0.339867 7.93164 0.758481V6.38614C7.93164 6.80476 8.27152 7.14386 8.68961 7.14386H14.3108C14.7289 7.14386 15.069 6.80476 15.069 6.38614V0.757966C15.068 0.339351 14.7289 0.000762939 14.3108 0.000762939Z"
+                                fill="#546785" />
+                            <path
+                                d="M14.3108 7.73181H8.68961C8.27152 7.73181 7.93164 8.07117 7.93164 8.48979V14.1168C7.93164 14.5353 8.27152 14.8744 8.68961 14.8744H14.3108C14.7289 14.8744 15.069 14.5353 15.069 14.1168V8.48979C15.068 8.07117 14.7289 7.73181 14.3108 7.73181Z"
+                                fill="#546785" />
+                            <path
+                                d="M14.3108 15.725H8.68961C8.27152 15.725 7.93164 16.0641 7.93164 16.4827V22.1099C7.93164 22.5289 8.27152 22.8675 8.68961 22.8675H14.3108C14.7289 22.8675 15.069 22.5289 15.069 22.1099V16.4827C15.068 16.0641 14.7289 15.725 14.3108 15.725Z"
+                                fill="#546785" />
+                            <path
+                                d="M22.2409 0.00128174H16.6215C16.2034 0.00128174 15.8633 0.340643 15.8633 0.759258V6.38615C15.8633 6.80528 16.2034 7.14386 16.6215 7.14386H22.2414C22.6595 7.14386 22.9996 6.80528 22.9996 6.38615V0.759258C22.9986 0.33987 22.659 0.00128174 22.2409 0.00128174Z"
+                                fill="#546785" />
+                            <path
+                                d="M22.2409 7.73334H16.6215C16.2034 7.73334 15.8633 8.07218 15.8633 8.49131V14.1182C15.8633 14.5368 16.2034 14.8754 16.6215 14.8754H22.2414C22.6595 14.8754 22.9996 14.5369 22.9996 14.1182V8.49131C22.9986 8.07218 22.659 7.73334 22.2409 7.73334Z"
+                                fill="#546785" />
+                            <path
+                                d="M22.2409 15.7256H16.6215C16.2034 15.7256 15.8633 16.0647 15.8633 16.4837V22.1109C15.8633 22.5295 16.2034 22.8681 16.6215 22.8681H22.2414C22.6595 22.8681 22.9996 22.5295 22.9996 22.1109V16.4837C22.9986 16.0647 22.659 15.7256 22.2409 15.7256Z"
+                                fill="#546785" />
+                        </svg>
+                    </div>
+                    <div class="catalog__icon">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.79167 0H0.958333C0.429333 0 0 0.429333 0 0.958333V4.79167C0 5.32067 0.429333 5.75 0.958333 5.75H4.79167C5.32067 5.75 5.75 5.32067 5.75 4.79167V0.958333C5.75 0.429333 5.32067 0 4.79167 0Z"
+                                fill="#BDBDBD" />
+                            <path
+                                d="M22.041 0H8.62435C8.09535 0 7.66602 0.429333 7.66602 0.958333V4.79167C7.66602 5.32067 8.09535 5.75 8.62435 5.75H22.041C22.57 5.75 22.9994 5.32067 22.9994 4.79167V0.958333C22.9994 0.429333 22.57 0 22.041 0Z"
+                                fill="#BDBDBD" />
+                            <path
+                                d="M4.79167 8.625H0.958333C0.429333 8.625 0 9.05433 0 9.58333V13.4167C0 13.9457 0.429333 14.375 0.958333 14.375H4.79167C5.32067 14.375 5.75 13.9457 5.75 13.4167V9.58333C5.75 9.05433 5.32067 8.625 4.79167 8.625Z"
+                                fill="#BDBDBD" />
+                            <path
+                                d="M22.041 8.625H8.62435C8.09535 8.625 7.66602 9.05433 7.66602 9.58333V13.4167C7.66602 13.9457 8.09535 14.375 8.62435 14.375H22.041C22.57 14.375 22.9994 13.9457 22.9994 13.4167V9.58333C22.9994 9.05433 22.57 8.625 22.041 8.625Z"
+                                fill="#BDBDBD" />
+                            <path
+                                d="M4.79167 17.25H0.958333C0.429333 17.25 0 17.6793 0 18.2083V22.0417C0 22.5707 0.429333 23 0.958333 23H4.79167C5.32067 23 5.75 22.5707 5.75 22.0417V18.2083C5.75 17.6793 5.32067 17.25 4.79167 17.25Z"
+                                fill="#BDBDBD" />
+                            <path
+                                d="M22.041 17.25H8.62435C8.09535 17.25 7.66602 17.6793 7.66602 18.2083V22.0417C7.66602 22.5707 8.09535 23 8.62435 23H22.041C22.57 23 22.9994 22.5707 22.9994 22.0417V18.2083C22.9994 17.6793 22.57 17.25 22.041 17.25Z"
+                                fill="#BDBDBD" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" class="btn btn-gray filter" data-modal="filter">Показать фильтры</a>
+
+            <div class="catalog__list">
+                <div class="item">
+                    <div class="catalog__img" style="background-image: url(img/catalog.png);">
+                        <div class="catalog__tags">
+                            <span class="green">Надежный и безопасный</span>
+                            <span class="yellow">Выбор профессионалов 2021</span>
+                            <span class="red">Узнать почему ...</span>
+                        </div>
+                    </div>
+                    <div class="catalog__code">Артикул <span>0945</span></div>
+                    <div class="catalog__title">Кабель ВВГ-П нг 2x1,5</div>
+                    <div class="catalog__features">11.00 грн/м</div>
+                    <div class="counter">
+                        <div class="counter__control minus">
+                            <img src="img/minus.svg" alt="">
+                        </div>
+                        <input type="number" value="24345">
+                        <div class="counter__control plus">
+                            <img src="img/plus.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn">Добавить</a>
+                    <div class="catalog__bottom">
+                        <div><span>Бренд:</span> Гал-Кат</div>
+                        <div><a href="javascript:void(0)">О товаре</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="catalog__img" style="background-image: url(img/catalog.png);">
+                        <div class="catalog__tags"></div>
+                    </div>
+                    <div class="catalog__code">Артикул <span>0945</span></div>
+                    <div class="catalog__title">Кабель ВВГ-П нг&nbsp;2&times;1,5 Кабель ВВГ-П нг&nbsp;2&times;1,5 Кабель
+                        ВВГ-П нг&nbsp;2&times;1,5
+                        2&times;1,5 Кабель ВВГ-П нг&nbsp;2&times;1,5</div>
+                    <div class="catalog__features">11.00 грн/м</div>
+                    <div class="counter">
+                        <div class="counter__control minus">
+                            <img src="img/minus.svg" alt="">
+                        </div>
+                        <input type="number" value="24345">
+                        <div class="counter__control plus">
+                            <img src="img/plus.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn">Добавить</a>
+                    <div class="catalog__bottom">
+                        <div><span>Бренд:</span> Гал-Кат</div>
+                        <div><a href="javascript:void(0)">О товаре</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="catalog__img" style="background-image: url(img/catalog.png);">
+                        <div class="catalog__tags"></div>
+                    </div>
+                    <div class="catalog__code">Артикул <span>0945</span></div>
+                    <div class="catalog__title">Кабель ВВГ-П нг&nbsp;2&times;1,5 Кабель ВВГ-П нг&nbsp;2&times;1,5 Кабель
+                        ВВГ-П нг&nbsp;2&times;1,5
+                        2&times;1,5 Кабель ВВГ-П нг&nbsp;2&times;1,5</div>
+                    <div class="catalog__features">11.00 грн/м</div>
+                    <div class="counter">
+                        <div class="counter__control minus">
+                            <img src="img/minus.svg" alt="">
+                        </div>
+                        <input type="number" value="24345">
+                        <div class="counter__control plus">
+                            <img src="img/plus.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn">Добавить</a>
+                    <div class="catalog__bottom">
+                        <div><span>Бренд:</span> Гал-Кат</div>
+                        <div><a href="javascript:void(0)">О товаре</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog__print">
+                <a href="javascript:void(0)" class="btn btn-gray">Вернуться к расчету</a>
+                <a href="javascript:void(0)"><span>Скачать прайс</span> <img src="img/price.png" alt=""></a>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Артикул</th>
+                    <th>Рисунок</th>
+                    <th>Название</th>
+                    <th>Цена/грн</th>
+                    <th>Количество</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>0945</td>
+                    <td><img src="img/product.png" alt=""></td>
+                    <td>Щит внутренней установки <br> с прозрачной дверью 8 мод. <br> HAGER GOLF VF108TD <br> <a
+                            href="javascript:void(0)" class="link">О товаре</a></td>
+                    <td>11.00</td>
+                    <td>
+                        <div class="counter">
+                            <div class="counter__control minus">
+                                <img src="img/minus.svg" alt="">
+                            </div>
+                            <input type="number" value="1">
+                            <div class="counter__control plus">
+                                <img src="img/plus.svg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                    <td><a href="javascript:void(0)" class="btn">Добавить</a></td>
+                    <td><a href="javascript:void(0)"><img src="img/trash.svg" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td>0945</td>
+                    <td><img src="img/product.png" alt=""></td>
+                    <td>Щит внутренней установки <br> с прозрачной дверью 8 мод. <br> HAGER GOLF VF108TD <br> <a
+                            href="javascript:void(0)" class="link">О товаре</a></td>
+                    <td>11.00</td>
+                    <td>
+                        <div class="counter">
+                            <div class="counter__control minus">
+                                <img src="img/minus.svg" alt="">
+                            </div>
+                            <input type="number" value="1">
+                            <div class="counter__control plus">
+                                <img src="img/plus.svg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                    <td><a href="javascript:void(0)" class="btn">Добавить</a></td>
+                    <td><a href="javascript:void(0)"><img src="img/trash.svg" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td>0945</td>
+                    <td><img src="img/product.png" alt=""></td>
+                    <td>Щит внутренней установки <br> с прозрачной дверью 8 мод. <br> HAGER GOLF VF108TD <br> <a
+                            href="javascript:void(0)" class="link">О товаре</a></td>
+                    <td>11.00</td>
+                    <td>
+                        <div class="counter">
+                            <div class="counter__control minus">
+                                <img src="img/minus.svg" alt="">
+                            </div>
+                            <input type="number" value="1">
+                            <div class="counter__control plus">
+                                <img src="img/plus.svg" alt="">
+                            </div>
+                        </div>
+                    </td>
+                    <td><a href="javascript:void(0)" class="btn">Добавить</a></td>
+                    <td><a href="javascript:void(0)"><img src="img/trash.svg" alt=""></a></td>
+                </tr>
+            </table>
+
+            <div class="catalog__print mb-0">
+                <a href="javascript:void(0)" class="btn btn-gray">Вернуться к расчету</a>
+                <a href="javascript:void(0)"><span>Скачать прайс</span> <img src="img/price.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTENT  -->
+<footer class="footer">
+    <div class="container">
+        <img src="img/logo.png" alt="">
+        <div class="footer__menu">
+            <a href="javascript:void(0)">О компании</a>
+            <a href="javascript:void(0)">Преимущества</a>
+            <a href="javascript:void(0)">Расчет сметы</a>
+        </div>
+    </div>
+</footer>
+
+<section class="copyright">
+    <div class="container">© 2021 Кабель-ОК интернет магазин кабельно-проводниковой продукции</div>
+</section>
+
+<div class="backdrop">
+    <div class="modal" data-modal="help">
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <div class="modal__body">
+                <div class="modal__title">Кабель, провод:</div>
+                <a href="javascript:void(0)">Пв</a>
+                <a href="javascript:void(0)">ВВГ</a>
+                <a href="javascript:void(0)">ШВВП</a>
+                <a href="javascript:void(0)">ПВС</a>
+                <a href="javascript:void(0)">ТВ КАБЕЛЬ</a>
+                <a href="javascript:void(0)">КАБЕЛИ СИГНАЛИЗАЦИИ И ИНТРЕНЕТ</a>
+                <a href="javascript:void(0)">ПРОВОД СИП</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="filter">
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <div class="modal__body">
+                <div class="catalog__sidebar">
+                    <div class="catalog__title">Все для монтажа кабеля</div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Количество <br>
+                            токопроводящих жил</div>
+                        <div class="catalog__form">
+                            <div class="form-group">
+                                <input type="checkbox" id="c1">
+                                <label for="c1">2</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" checked id="c2">
+                                <label for="c2">3</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="c3">
+                                <label for="c3">4</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="c4">
+                                <label for="c4">5</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Материал токопроводящей <br>
+                            жилы</div>
+                        <div class="catalog__form">
+                            <div class="form-group">
+                                <input type="checkbox" id="c5">
+                                <label for="c5">2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Сечение токопроводящих <br>
+                            жил, мм2</div>
+                        <div class="catalog__form">
+                            <div class="form-group">
+                                <input type="checkbox" id="c6">
+                                <label for="c6">1.5</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" checked id="c7">
+                                <label for="c7">2.5</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="c8">
+                                <label for="c8">4</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="c9">
+                                <label for="c9">6</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-title">Марка</div>
+                        <div class="catalog__form">
+                            <div class="form-group">
+                                <input type="checkbox" id="c10">
+                                <label for="c10">ВВГ-П нг</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" checked id="c11">
+                                <label for="c11">ВВГ-П нгд</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="c12">
+                                <label for="c12">ВВГнг</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
