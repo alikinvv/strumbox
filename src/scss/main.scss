@@ -28,8 +28,22 @@ body {
     height: 1em;
 }
 
+.orange {
+    color: $orange;
+}
+
 img {
     max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
 }
 
 h1,
@@ -43,6 +57,13 @@ ul {
 button {
     background: transparent;
     border: 0;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 9px;
 }
 
 input[type='checkbox'] {
@@ -108,14 +129,19 @@ a {
 
     &-outline {
         background: transparent;
-        border: 2px solid #FABF8A;
-        color: #FABF8A;
+        border: 2px solid #fabf8a;
+        color: #fabf8a;
 
         &:hover {
-            background: #FABF8A;
+            background: #fabf8a;
             color: $text;
             box-shadow: none;
         }
+    }
+
+    &-gray {
+        background: #47505f;
+        color: #fff;
     }
 
     &.center {
@@ -130,6 +156,11 @@ a {
 
     margin: 0 auto;
     max-width: 1380px;
+}
+
+.container-sm {
+    margin: 0 auto;
+    max-width: 910px;
 }
 
 .header {
@@ -199,11 +230,11 @@ a {
 
     &__col {
         &:first-child {
-            width: 45%;
+            width: 55%;
         }
 
         &:last-child {
-            width: 55%;
+            width: 45%;
         }
 
         img {
@@ -218,7 +249,7 @@ a {
         line-height: 1.25;
         color: #fabf8a;
         margin-bottom: 30px;
-        margin-top: 35px;
+        margin-top: 43px;
     }
 
     &__info {
@@ -227,7 +258,6 @@ a {
         & > span {
             font-size: 18px;
             display: block;
-            margin-bottom: 5px;
         }
     }
 
@@ -245,7 +275,7 @@ a {
         margin-left: 5px;
 
         span {
-            background: #E0E0E0;
+            background: #e0e0e0;
             width: 70px;
             @include fcc;
             color: $text;
@@ -257,7 +287,7 @@ a {
     }
 
     &__divider {
-        background: #FABF8A;
+        background: #fabf8a;
         height: 2px;
         width: 834px;
         margin-top: 15px;
@@ -266,7 +296,7 @@ a {
 
     .divider {
         height: 2px;
-        background: #FABF8A;
+        background: #fabf8a;
         width: 260px;
         margin-bottom: 39px;
         margin-top: 64px;
@@ -277,6 +307,237 @@ a {
     }
 
     .btn-outline {
-        margin-top: 40px;
+        margin-top: 18px;
     }
+}
+
+.order {
+    padding: 70px 0;
+
+    &__wrap {
+        border-top: 2px solid $orange;
+        border-bottom: 2px solid $orange;
+        @include fcsb;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+
+        div {
+            margin-right: 10px;
+        }
+
+        .btn {
+            border: 2px solid $orange;
+            margin-top: -2px;
+            margin-bottom: -2px;
+
+            &:hover {
+                background: transparent;
+                color: $orange;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.catalog {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 2px solid #fff;
+        }
+
+        th {
+            background: #47505f;
+            color: #fff;
+            font-weight: 400;
+            padding: 9px 15px;
+        }
+
+        td {
+            background: #f2f2f2;
+            padding: 17px 12px;
+
+            &:nth-child(1),
+            &:nth-child(4),
+            &:nth-child(6),
+            &:nth-child(7) {
+                text-align: center;
+            }
+
+            &:nth-child(2) {
+                background: #fff;
+                text-align: center;
+            }
+
+            a {
+                display: block;
+
+                img {
+                    width: 19px;
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 29px;
+        margin-bottom: 50px;
+        @include centerX;
+        display: inline-flex;
+        align-items: center;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}
+
+.counter {
+    @include fcc;
+    user-select: none;
+
+    input {
+        width: 84px;
+        text-align: center;
+        background: #fff;
+        color: #828282;
+        font-weight: 500;
+        border: 0;
+        height: 24px;
+    }
+
+    &__control {
+        width: 24px;
+        height: 24px;
+        @include fcc;
+        cursor: pointer;
+        margin-bottom: -1px;
+        margin-top: -1px;
+        transition: $trans;
+        background: #e0e0e0;
+
+        &.minus {
+            margin-left: -1px;
+        }
+
+        &.plus {
+            margin-right: -1px;
+        }
+    }
+}
+
+.total {
+    &__wrap {
+        background: #f2f2f2;
+        @include fcsb;
+        padding: 15px 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            font-weight: 600;
+        }
+
+        strong {
+            margin-top: 5px;
+        }
+
+        &:last-child {
+            text-align: right;
+
+            strong {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__controls {
+        @include fce;
+        margin-top: 28px;
+
+        .btn-gray {
+            margin-right: 22px;
+        }
+    }
+
+    &__links {
+        @include fec;
+        flex-direction: column;
+        margin-top: 35px;
+
+        a {
+            @include fcn;
+            font-weight: 500;
+
+            &:hover span {
+                text-decoration: none;
+            }
+
+            img {
+                margin-left: 16px;
+            }
+
+            span {
+                font-size: 18px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__social {
+        @include fcn;
+        margin-top: 28px;
+
+        span {
+            font-size: 18px;
+        }
+
+        a {
+            transition: $trans;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 85px;
+
+    .container {
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        padding: 30px 0;
+        @include fcsb;
+    }
+
+    &__menu {
+        a {
+            font-size: 16px;
+            margin-left: 49px;
+            transition: $trans;
+
+            &:hover {
+                color: $orange;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
 }
